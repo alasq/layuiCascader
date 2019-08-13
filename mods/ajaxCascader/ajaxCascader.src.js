@@ -175,7 +175,7 @@
  					li = li +' class="cascader-choose-active"'
  					position = [i,data.length]
  				}
- 				if (data[i].hasChild == true || data[i].children) {
+ 				if (data[i].hasChild == true || data[i][param.prop.children]) {
  					li = li+'>'+data[i][param.prop.label]+'<i class="layui-icon layui-icon-right"></i></li>'
  				} else {
  					li = li+'>'+data[i][param.prop.label]+'</li>'
